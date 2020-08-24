@@ -63,11 +63,10 @@ class MenuButton2 extends React.Component {
         <span
           sx={{
             position: "absolute",
-            top: "5px",
+            top: "-25px",
             padding: 2,
-            borderRadius: "15px",
-            border: theme => theme.borders.header,
-            color: "#78758E",
+            textAlign: "center"
+            
           }}
         >
           MENU{" "}
