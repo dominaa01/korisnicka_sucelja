@@ -52,7 +52,7 @@ class MenuButton2 extends React.Component {
           width: "50px",
           cursor: "pointer",
           "&:hover": {
-            backgroundColor: "indigo.2",
+            backgroundColor: "#532d7c",
           },
         }}
         onClick={this.ClickMoreButton}
