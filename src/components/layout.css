@@ -8,8 +8,8 @@
 }
 
 input:focus {
-    background-color: #532d7c !important;
-    border: 1px solid #532d7c;
+    
+    border: 1px solid #532d7c !important;
     
 }
 
