@@ -48,7 +48,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-netlify-identity",
       options: {
-        url: "https://modest-goodall-3c77be.netlify.com",
+        url: "https://app.netlify.com/sites/dreamy-lamarr-c07c65",
       },
     },
     {
