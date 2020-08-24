@@ -47,9 +47,10 @@ export default ({ pageContext, data }) => {
         <div>
           <MDXRenderer>{post.body}</MDXRenderer>
         </div>
-        <span sx={{ fontWeight: "400", fontSize: "1.1em", color: "#525252", paddingBottom: "20px" }}>
+        <p sx={{ fontWeight: "400", fontSize: "1.1em", color: "#525252", 
+        marginBottom: "20px", textAlign: "right" }}>
           {post.frontmatter.date}
-        </span>
+        </p>
       </div>
       </div>
     </Layout>

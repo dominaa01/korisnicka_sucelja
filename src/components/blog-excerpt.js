@@ -1,14 +1,12 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
 import { Link } from "gatsby"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
 import './layout.css'
 
 export default ({ posts }) => {
   const postsList = posts.map(({ post }) => {
     const { id, excerpt } = post
     const { title, date, slug } = post.frontmatter
-    const isLarge = useMediaQuery("(min-width: 500px)")
     return (
       <Link to={`/blog/${slug}`}
         style={{
@@ -32,7 +30,8 @@ export default ({ posts }) => {
           </Styled.h3>
           <Styled.p sx={{ m: 0, color: "#000000" }}>{excerpt}</Styled.p>
           <p sx={{ fontWeight: "400", fontSize: "1.1em", color: "#525252", 
-          textAlign: "right", width: "100%", mb: 0, mt: 1 }}>
+          textAlign: "right", width: "100%", 
+           }}>
             {date}
           </p>
         </section>

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import PozadinskaSlika from "../components/pozadinskaslika"
 import Help from "../components/helpus"
 
-const trebamovas = () => {
+const rezervacija = () => {
   return (
     <Layout>
       <SEO title="Rezervacija" />
@@ -14,4 +14,4 @@ const trebamovas = () => {
   )
 }
 
-export default trebamovas
+export default rezervacija

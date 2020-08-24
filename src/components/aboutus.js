@@ -1,18 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Img from "gatsby-image"
-import { graphql, StaticQuery } from "gatsby"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 
-function renderImage({ file }) {
-  return <Img fluid={file.childImageSharp.fluid} />
-}
-
 const About = () => {
-  const isLarge = useMediaQuery("(min-width: 900px)")
-  const isnotLargeatAll = useMediaQuery("(max-width: 900px,min-width:600px)")
-  const isMobile = useMediaQuery("(min-width:400px)")
   return (
     <div style={{
       width: "60%", marginLeft: "auto", marginRight: "auto",

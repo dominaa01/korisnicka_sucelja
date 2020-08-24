@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import About from "../components/aboutus"
 import PozadinskaSlika from "../components/pozadinskaslika"
 
-const onama = () => {
+const info = () => {
   return (
     <Layout>
       <SEO title="Info"/>
@@ -14,4 +14,4 @@ const onama = () => {
   )
 }
 
-export default onama
+export default info

@@ -105,29 +105,12 @@ Array.from({ length: numPages }).forEach((_, index) => {
 })
 
 
-
-psi.forEach(({ pas }, index) => {
-  const slug =pas.frontmatter.slug
-    const previous = index === 0 ? null : psi[index - 1].pas
-    const next = index === psi.length - 1 ? null : psi[index + 1].pas
-  createPage({
-    path: `/udomi/${pas.frontmatter.slug}`,
-    component: path.resolve(`./src/templates/udomime.js`),
-    context: {
-      slug,
-      previous,
-      next
-    },
-  })
-})
-
-
 const dogsPerPage = 3
 const numofPages = Math.ceil(psi.length / dogsPerPage)
 
 Array.from({ length: numofPages }).forEach((_, index) => {
   createPage({
-    path: index === 0 ? `/udomi` : `/udomi/${index + 1}`,
+    path: index === 0 ? `/usluge` : `/udomi/${index + 1}`,
     component: path.resolve(`./src/templates/udomljavanje.js`),
     context: {
       // additional data can be passed via context;

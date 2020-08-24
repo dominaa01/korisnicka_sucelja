@@ -3,9 +3,8 @@ import { jsx } from "theme-ui"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import salon from "../assets/walk-in-salon.jpg"
 
-const Sigurna = () => {
+const Salon = () => {
   const isLarge = useMediaQuery("(min-width: 900px)")
-  const isnotLargeatAll = useMediaQuery("(max-width: 900px,min-width:600px)")
   return (
     <div
       style={{
@@ -91,4 +90,4 @@ Naravno, naša vrhunska umjetnost noktiju osigurava da se klijenti vraćaju izno
   )
 }
 
-export default Sigurna
+export default Salon

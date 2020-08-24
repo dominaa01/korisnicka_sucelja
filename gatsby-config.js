@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nail Studio Flex`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Web stranica Nail Studija Flex`,
     author: `@gatsbyjs`,
     menuItems: [
       {
@@ -11,17 +11,17 @@ module.exports = {
       },
       {
         text: "Usluge",
-        link: "/udomi",
+        link: "/usluge",
         id: "18uhehdbaw",
       },
       {
         text: "Rezervacija",
-        link: "/trebamovas",
+        link: "/rezervacija",
         id: "18uhehksao",
       },
       {
         text: "Info",
-        link: "/onama",
+        link: "/info",
         id: "20uhehdbsb",
       },
       {
@@ -69,7 +69,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/images/sigkuc1.png`, // This path is relative to the root of the site.
+        icon: `content/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-theme-ui`,

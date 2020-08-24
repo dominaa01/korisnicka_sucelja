@@ -1,32 +1,16 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
-import { graphql } from "gatsby"
-import BlogNav, { leftArrow, rightArrow } from "../components/blog-navigation"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
+import PozadinskaSlika from "../components/pozadinskaslika"
 import nokti_manikura from "../assets/nokti_manikura.jpg"
 
 
-const Udomljavanje = ({
-  pageContext,
-  data: {
-    allMdx: { psi },
-  },
-}) => {
-  const isLarge = useMediaQuery("(min-width: 1090px)")
-  const isnotLargeatAll = useMediaQuery("(min-width: 680px)")
-  const isMobile = useMediaQuery("(max-width: 360px)")
-  const { currentPage, numofPages } = pageContext
-  const isFirst = currentPage === 1
-  const isLast = currentPage === numofPages
-  const previousPage =
-    currentPage - 1 === 1 ? "/udomi/" : `/udomi/${(currentPage - 1).toString()}`
-  const nextPage = `/udomi/${(currentPage + 1).toString()}`
-
+const usluge = () => {
   return (
     <Layout>
       <SEO title="Usluge" />
+      <PozadinskaSlika naziv={"Usluge"}/>
+
       <div style={{
         marginTop: "20px"
       }}>
@@ -152,36 +136,9 @@ const Udomljavanje = ({
           </div>
         </div>
       </div>
+
     </Layout>
   )
 }
 
-export default Udomljavanje
-
-export const query = graphql`
-  query Udomljavanje($skip: Int, $limit: Int) {
-    allMdx(
-      filter: { fileAbsolutePath: { regex: "//content/udomi//" } }
-      limit: $limit
-      skip: $skip
-    ) {
-      psi: edges {
-        pas: node {
-          id
-          frontmatter {
-            name
-            slug
-            image {
-              childImageSharp {
-                fixed(height: 290, width: 269) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-          excerpt(pruneLength: 50)
-        }
-      }
-    }
-  }
-`
+export default usluge
