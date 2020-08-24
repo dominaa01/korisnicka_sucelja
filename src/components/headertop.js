@@ -13,7 +13,6 @@ import { Link } from "gatsby"
 
 const Headertop = () => {
   const isLarge = useMediaQuery("(min-width: 700px)")
-  const Hide = useMediaQuery("(min-width: 440px)")
   const [dialog, setDialog] = React.useState(false)
   const identity = useIdentityContext()
   const name =
@@ -22,7 +21,6 @@ const Headertop = () => {
       identity.user.user_metadata &&
       identity.user.user_metadata.name) ||
     "NoName"
-  const isLoggedIn = identity && identity.isLoggedIn
 
   return (
     <div style={isLarge ? style1 : style2}>
@@ -31,14 +29,15 @@ const Headertop = () => {
           width: "100%",
         }}
       >
-        <Link to={`/`} style={{ color: "#666378", textAlign: "center", 
+        <Link to={`/`} style={{ textAlign: "center", 
         fontSize: "1.7em", color: "#280439", fontFamily: 'Quicksand', 
         verticalAlign: "middle", textDecoration: "none"  }}>
           <p style={{textAlign: "center", marginBottom: 0}}>
             NAIL STUDIO
           </p>
           
-          <p style={{fontFamily: "Bilbo", fontWeight: "600", fontSize: "1.5em", marginTop: 0, marginBottom: "10px",color:"#542d7d"}}>FLEX</p>
+          <p style={{fontFamily: "Bilbo", fontWeight: "600", 
+          fontSize: "1.5em", marginTop: 0, marginBottom: "10px",color:"#542d7d"}}>FLEX</p>
         </Link>
       </div>
       <div>

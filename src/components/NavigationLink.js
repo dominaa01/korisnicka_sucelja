@@ -1,10 +1,8 @@
 /** @jsx jsx */
 import { Link } from "gatsby"
-import { jsx, useThemeUI } from "theme-ui"
+import { jsx } from "theme-ui"
 
 const NavigationLink = ({ children, ...prop }) => {
-  const { theme } = useThemeUI()
-
   return (
     <Link
       {...prop}
@@ -29,7 +27,6 @@ const NavigationLink = ({ children, ...prop }) => {
         },
       }}
       activeStyle={{
-        color: "#542D7D",
         backgroundColor: `#5F0A87`,
         color: '#ffffff',
       }}

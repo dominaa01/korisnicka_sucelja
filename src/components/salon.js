@@ -42,7 +42,6 @@ const Salon = () => {
         style={{
           fontFamily: "Quicksand",
           fontSize: isLarge ? "20px" : "18px ",
-          textAlign: "center",
           marginBottom: "25px",
           letterSpacing: "1px",
           lineHeight: "1.8",
@@ -70,7 +69,6 @@ Naravno, naša vrhunska umjetnost noktiju osigurava da se klijenti vraćaju izno
         style={{
           fontFamily: "Quicksand",
           fontSize: isLarge ? "20px" : "18px ",
-          textAlign: "center",
           color: "#525252",
           letterSpacing: "1px",
           lineHeight: "1.8",

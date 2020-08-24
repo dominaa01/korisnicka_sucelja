@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PozadinskaSlika from "../components/pozadinskaslika"
 import nokti_manikura from "../assets/nokti_manikura.jpg"
+import nokti_pedikura from "../assets/pedikura.jpg"
 
 
 const usluge = () => {
@@ -78,14 +79,14 @@ const usluge = () => {
         <div>
           <div style={{
             textAlign: "center",
-            backgroundImage: `url(${nokti_manikura})`,
+            backgroundImage: `url(${nokti_pedikura})`,
             backgroundColor: "#000000",
             minHeight: "320px",
             width: "70%",
             margin: "auto",
             marginBottom: "20px",
             backgroundSize: "cover",
-            backgroundPositionY: "-440px",
+            backgroundPositionY: "-200px",
             fontSize: "2em",
             fontFamily: 'Quicksand'
 

@@ -6,8 +6,7 @@ import PozadinskaSlika from "../components/pozadinskaslika"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import BlogExcerpt from "../components/blog-excerpt"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
-import BlogNav, { leftArrow, rightArrow } from "../components/blog-navigation"
+import BlogNav from "../components/blog-navigation"
 import SearchIcon from "../components/searchicon"
 
 const BlogList = ({
@@ -56,8 +55,6 @@ const BlogList = ({
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
   const posts1 = hasSearchResults ? filteredData : posts
-  const isLarge = useMediaQuery("(min-width: 730px)")
-  const isnotLarge = useMediaQuery("(min-width: 375px)")
 
   return (
     <Layout>
@@ -112,13 +109,10 @@ const BlogList = ({
         >
           <BlogExcerpt posts={posts1} />
         </div>
-        <BlogNav style={{width: "100%"}}>
+        <BlogNav style={{width: "100%", marginTop: "0px"}}>
           <BlogNav.Previous>
             {!isFirst && (
               <BlogNav.Link type="button" className="inputButton" style={{float: "right", marginBottom: "25px"}} to={previousPage}>Prethodna stranica</BlogNav.Link>
-            )}
-              {isFirst && (
-              <BlogNav.Link type="button" className="inputButton" style={{float: "right", marginBottom: "25px"}} readonly to={previousPage}>Prethodna stranica</BlogNav.Link>
             )}
           </BlogNav.Previous>
 

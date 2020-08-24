@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../components/layout"
 import Title from "../components/title"
-import BlogNav, { leftArrow, rightArrow } from "../components/blog-navigation"
+import BlogNav from "../components/blog-navigation"
 import '../components/layout'
 
 
@@ -26,7 +26,7 @@ export default ({ pageContext, data }) => {
           {(next || previous) && (
             <BlogNav.Link type="button" className="inputButton" 
             style={{padding: "5px"}} to={`/blog/`}>
-              {leftArrow} {'Natrag'}
+              {'Natrag'}
             </BlogNav.Link>
           )}
         </BlogNav.Previous>

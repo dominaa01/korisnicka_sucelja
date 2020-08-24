@@ -1,18 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Img from "gatsby-image"
-import { graphql, StaticQuery } from "gatsby"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
 import './layout.css'
 
-function renderImage({ file }) {
-  return <Img fluid={file.childImageSharp.fluid} />
-}
-
-const Help = () => {
-  const isLarge = useMediaQuery("(min-width: 1000px)")
-  const isnotLargeatAll = useMediaQuery("(max-width: 1000px,min-width:600px)")
-  const isMobile = useMediaQuery("(min-width:400px)")
+const RezervirajteTermin = () => {
   return (
     <div style={{ width: "100%", display: "inline", marginLeft: "auto",
     marginRight: "auto" }}>
@@ -117,4 +107,4 @@ const Help = () => {
   )
 }
 
-export default Help
+export default RezervirajteTermin
