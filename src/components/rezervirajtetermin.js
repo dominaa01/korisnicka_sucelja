@@ -58,6 +58,7 @@ const RezervirajteTermin = () => {
             </td>
           <td>
           <select className="inputContact" required style={{fontWeight:"bold"}}>
+              <option>Ne želim dodatak</option>
               <option>Komplicirana pedikura</option>
               <option>Kurje oko</option>
               <option>Urasli nokat</option>
